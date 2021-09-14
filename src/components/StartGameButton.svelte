@@ -2,11 +2,13 @@
 	import { gameStarted } from './../store.js';
 </script>
 
-{#if !$gameStarted}
-  <button on:mousedown={() => gameStarted.set(true)}>
+<button on:mousedown={() => gameStarted.set(!$gameStarted)}>
+  {#if !$gameStarted}
     Start Game
-  </button>
-{/if}
+  {:else}
+    Not Yet
+  {/if}
+</button>
 
 <style>
   button {
