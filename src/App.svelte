@@ -4,6 +4,8 @@
 
   $: selectedTrack = '/soundtrack/Opening-Screen.mod';
 
+  let showGame = false;
+
   const soundtrack = [
     {active: true, trackNo: 0, title: 'Opening Screen', url: '/soundtrack/Opening-Screen.mod'},
     {active: false, trackNo: 1, title: 'First Impression', url: '/soundtrack/First-Impression.mod'},
@@ -19,13 +21,17 @@
   ];
 </script>
 
+{#if showGame}
 <div class="relative">
   <GameScreenStoryboard screen="/opening.jpg" fadeIn />
   <OpenMPT track={selectedTrack}/>
 </div>
+{:else}
+  <button on:click={() => showGame = true}>LOAD GAME</button>
+{/if}
 
 
-<div style="margin: 100px 0 0 100px; width: 500px;">
+<div style="margin: 100px auto 0 auto; padding-left: 100px; width: 500px; width: 1189px;">
   <h2 style="font-size: 16px; margin-bottom: 20px; color: #3a475d;">Original Game Soundtrack</h2>
   <ul style="padding: 0; color: #999999; cursor: pointer">
     {#each soundtrack as { trackNo, title, url }}

@@ -31,6 +31,7 @@
   }
 
   onMount(() => {
+    window['libopenmpt'] = {};
     loadTrack();
   });
 </script>
