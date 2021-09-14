@@ -1,5 +1,5 @@
 <script>
-  import MusicOnOffToggle from './components/MusicOnOffToggle.svelte';
+  import MusicOnOffToggle from './MusicOnOffToggle.svelte';
 
   export let screen;
   export let fadeIn;
