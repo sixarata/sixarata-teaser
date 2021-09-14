@@ -5,20 +5,21 @@
 
 <script>
   import { onMount } from 'svelte';
-  import { musicOn } from '../store';
+  import { musicOn, gameStarted } from '../store';
 
   export let track;
 
   let player;
 
   $: $musicOn & player?.togglePause();
+  $: $gameStarted & player?.togglePause();
 
   onMount(() => {
     window['libopenmpt'] = {};
     libopenmpt.onRuntimeInitialized = () => {
-      const init = () => player = new ChiptuneJsPlayer(new ChiptuneJsConfig(-1));
+      player = new ChiptuneJsPlayer(new ChiptuneJsConfig(-1));
       const afterLoad = (path, buffer) => player.play(buffer);
-      init() & player.load(track, afterLoad.bind(this, track))
+      player.load(track, afterLoad.bind(this, track))
     };
   });
 </script>

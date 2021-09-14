@@ -1,5 +1,6 @@
 <script>
   import MusicOnOffToggle from './MusicOnOffToggle.svelte';
+  import StartGameButton from './StartGameButton.svelte';
 
   export let screen;
   export let fadeIn;
@@ -7,12 +8,14 @@
 
 <div class="poster {fadeIn && 'fade-in'}" style="background-image: url({screen});">
   <MusicOnOffToggle />
+  <StartGameButton />
 </div>
 
 <style>
   .poster {
+    position: relative;
     margin: auto;
-    min-height: 671px;
+    height: 671px;
     width: 1189px;
     background-repeat: no-repeat;
   }
