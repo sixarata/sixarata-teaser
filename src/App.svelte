@@ -27,7 +27,9 @@
   <OpenMPT track={selectedTrack}/>
 </div>
 {:else}
+<div class="relative text-center">
   <button on:click={() => showGame = true}>LOAD GAME</button>
+  </div>
 {/if}
 
 
@@ -67,6 +69,9 @@
   }
   .text-right {
     text-align: right;
+  }
+  .text-center {
+    text-align: center;
   }
   .w-20 {
     width: 3rem;

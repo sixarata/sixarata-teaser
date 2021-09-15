@@ -23,6 +23,9 @@
 
   const loadTrack = () => {
     window['libopenmpt'] = {};
+    libopenmpt.locateFile = (filename) => {
+      return "//cdn.jsdelivr.net/gh/deskjet/chiptune2.js@master/" + filename;
+    };
     libopenmpt.onRuntimeInitialized = () => {
       player = new ChiptuneJsPlayer(new ChiptuneJsConfig(-1));
       const afterLoad = (path, buffer) => player.play(buffer);
