@@ -18,6 +18,7 @@
     {active: false, trackNo: 8, title: 'Breakin Out', url: '/soundtrack/Breakin-Out.mod'},
     {active: false, trackNo: 9, title: 'Flying Through Space', url: '/soundtrack/Flying-Through-Space.mod'},
     {active: false, trackNo: 10, title: 'Fuck You Alien Fucks', url: '/soundtrack/Fuck-You-Alien-Fucks.xm'},
+    {active: false, trackNo: 11, title: 'Forever With You', url: '/soundtrack/forever-in-this-moment-with-you.xm'},
   ];
 </script>
 
