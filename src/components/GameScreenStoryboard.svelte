@@ -16,7 +16,7 @@
     position: relative;
     margin: auto;
     height: 671px;
-    width: 1189px;
+    width: 1140px;
     background-repeat: no-repeat;
   }
   .fade-in {
