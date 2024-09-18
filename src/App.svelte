@@ -29,7 +29,7 @@
     {active: false, trackNo: 14, title: 'City Slicker', url: '/soundtrack2/02_-_City_Slicker.mod'},
     {active: false, trackNo: 15, title: 'Light-years for You', url: '/soundtrack2/03_-_Lightyears_for_You.xm'},
     {active: false, trackNo: 16, title: 'Last Cruise on Earth', url: '/soundtrack2/04_-_Last_Cruise_on_Earth.mod'},
-    {active: false, trackNo: 17, title: 'Lock \'n Load', url: '/soundtrack2/04_-_Lock_n_Load.xm'},
+    {active: false, trackNo: 17, title: 'Lock n Load', url: '/soundtrack2/04_-_Lock_n_Load.xm'},
     {active: false, trackNo: 18, title: 'Stay Right There', url: '/soundtrack2/04_-_Stay_Right_There.xm'},
     {active: false, trackNo: 19, title: 'You Feel Me Tho', url: '/soundtrack2/05_-_You_feel_me_tho.xm'},
     {active: false, trackNo: 20, title: 'Killing Aliens', url: '/soundtrack2/07_-_Killing_Aliens.xm'},
