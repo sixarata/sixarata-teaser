@@ -11,7 +11,7 @@
   const soundtrack = [
     {active: true, trackNo: 0, title: 'Opening Screen', url: '/soundtrack/Opening-Screen.mod'},
     {active: false, trackNo: 1, title: 'First Impression', url: '/soundtrack/First-Impression.mod'},
-    {active: false, trackNo: 2, title: 'Everything Is Going To Be Ok', url: '/soundtrack/Everything-Is-Going-To-Be-Ok.mod'},
+    {active: false, trackNo: 2, title: 'It\'s Going To Be Ok', url: '/soundtrack/Everything-Is-Going-To-Be-Ok.mod'},
     {active: false, trackNo: 3, title: 'Joyride', url: '/soundtrack/Joyride.xm'},
     {active: false, trackNo: 4, title: 'The Path Forward', url: '/soundtrack/The-Path-Forward.xm'},
     {active: false, trackNo: 5, title: 'I am the ruler', url: '/soundtrack/I-am-the-ruler.xm'},
@@ -45,7 +45,7 @@
 {#if showGame}
 <div class="relative" style="max-width: 1140px; margin: 0 auto; z-index: 2;">
   <div in:fade|global={{ duration: 6000, delay: 1600}} style="position: absolute; bottom: 30px; right: 30px; z-index: 1000;">
-    <h2 style="font-size: 16px; margin-bottom: 20px; color: #3a475d;">Original Game Soundtrack</h2>
+    <h2 style="font-size: 16px; margin-bottom: 20px; color: #3a475d;">Side A</h2>
     <ul style="padding: 0; color: #999999; cursor: pointer; margin-bottom: 30px;  text-shadow: 0 0 10px #43907e;">
       {#each soundtrack as { trackNo, title, url }}
         <li class="flex" on:click={() => selectedTrack = url }>
@@ -59,9 +59,9 @@
   <OpenMPT track={selectedTrack}/>
 </div>
 
-<div in:fade={{ duration: 7000, delay: 3500}} style=" display: flex;  max-width: 1140px; width: 100%; margin: 30px auto; z-index: 1;">
+<div in:fade={{ duration: 7000, delay: 3500}} style=" display: flex;  max-width: 1140px; width: 100%; margin: 10px auto; z-index: 1;">
   <div style="position: relative; width: 100%;">
-    <div in:fade|global={{ duration: 2000, delay: 4500}} style="position: absolute; top: 30px; left: 70px;">
+    <div in:fade|global={{ duration: 2000, delay: 4500}} style="position: absolute; top: 50px; left: 70px;">
       <h2 style="font-size: 16px; margin-bottom: 20px; color: #3a475d;">Side B</h2>
       <ul style="padding: 0; color: #f3f3f3; cursor: pointer; text-shadow: 0 0 10px #f66586a0;">
         {#each soundtrack2 as { trackNo, title, url }}
