@@ -63,7 +63,7 @@
   <div style="position: relative; width: 100%;">
     <div in:fade|global={{ duration: 2000, delay: 4500}} style="position: absolute; top: 50px; left: 70px;">
       <h2 style="font-size: 16px; margin-bottom: 20px; color: #3a475d;">Side B</h2>
-      <ul style="padding: 0; color: #f3f3f3; cursor: pointer; text-shadow: 0 0 10px #f66586a0;">
+      <ul style="padding: 0; color: #999999; cursor: pointer; text-shadow: 0 0 10px #f66586a0;">
         {#each soundtrack2 as { trackNo, title, url }}
           <li class="flex" on:click={() => selectedTrack = url }>
             <div class="w-20 mr-6 text-right">{trackNo}</div>
